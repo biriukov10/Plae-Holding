@@ -1,40 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/app.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Yantramanav:300,400&display=swap" rel="stylesheet">
+  <title>Plae Holding</title>
 </head>
 <body>
+  <!-- start section hero -->
+<section class="ph-hero" id="hero">
+  <div class="ph-hero-logo">
+    <a href="#" class="ph-hero-logo__item">
+      <svg class="ph-hero-logo__item">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="ph-hero-desc">
+    <h1 class="ph-hero-desc__title">Coming Soon</h1>
+    <p class="ph-hero-desc__text">goplae.co.uk is coming soon but in the meantime check out this page<br> and sign up to newsletter fo more information </p>
+    <form class="ph-hero-form">
+      <input type="email" class="ph-hero-form__input" placeholder="Enter email address">
+      <button class="ph-hero-form__btn">Sing up</button>
+    </form>
+  </div>
+  <div class="ph-hero-dots">
+    <a href="#hero" class="ph-hero-dots__circle"></a>
+    <a href="#about" class="ph-hero-dots__circle"></a>
+    <a href="#customers" class="ph-hero-dots__circle"></a>
+    <a href="#edie" class="ph-hero-dots__circle"></a>
+    <a href="#" class="ph-hero-dots__circle"></a>
+    <a href="#" class="ph-hero-dots__circle"></a>
+  </div>
+</section> 
+<!-- end section hero -->
+<!-- start section about-->
+<section class="ph-about" id="about">
+  <div class="ph-about-desc">
+    <h2 class="ph-about-desc__title">
+      About Plae
+    </h2>
+    <p class="ph-about-desc__text">
+      About Plae
+      Previously a Designer for Puma and Adidas, HeadDesigner Ryan Ringholz has started a new revolution in kids trainers. Using technology usually reserved for elite athletes, Plae creates shoes designed especially for a child’s foot.
+    </p>
+    <p class="ph-about-desc__text">
+      Because kids feet are always growing, their shoes should accommodate leaving the cartilage and fledgling bone room to grow its own way. The interchangeable tabs adjust to accommodate thinner, wider or thicker feet and nearly all Plae shoes can fit an AFO orthotic brace.
+    </p>
+    <p class="ph-about-desc__text">
+      With their dynamic traction, little feet can feel the ground beneath them and get a grip on it. The rest is designed to elite athlete standards: super shock absorption, durable toe guards, and wicking, washable anti-microbial inserts.
+    </p>
+      <p class="ph-about-desc__text">
+      With every shoe, Plae sources responsible, recycled, and non-toxic materials, and makes sure manufacturing and labour is fair and child-free.
+    </p>
+  </div>
+  <div class="ph-about-image">
+    <img src="img/aboutImg.jpg" class="ph-about-image__item" alt="Shoes">
+  </div>
+</section>
+<!-- end section about-->
+<!-- start customers section -->
+<section class="ph-customers" id="customers">
+  <div class="ph-customers-image">
+    <img src="img/customersImg.jpg" class="ph-customers-image__item" alt="Girl">
+  </div>
+  <div class="ph-customers-desc">
+    <h2 class="ph-customers-desc__title">
+      What our customers say
+    </h2>
+    <blockquote class="ph-customers-desc__quote">
+      I like them because they are very<br> comfy and soft inside. They are<br> really light which means I run faster.<br> I like the cool straps that I can<br>change
+    </blockquote>
+    <span class="ph-customers-desc__author">Charlie (age 8)</span>
+  </div>
+</section>
+<!-- end customers section -->
+<!-- section edie -->
+<section class="ph-customers" id="edie">
+  <div class="ph-customers-desc ph-customers-desc--padding">
+    <blockquote class="ph-customers-desc__quote">
+      I like that I can do PE in them<br> because they're so comfy and<br> then after school in the park, the<br> bottoms are grippy so I can<br> climb really well
+    </blockquote>
+    <span class="ph-customers-desc__author">Edie (age 6)</span>
+  </div>
+  <div class="ph-customers-image">
+    <img src="img/Edie.jpg" class="ph-customers-image__item" alt="Edie">
+  </div>
+</section>
+<!-- section edie -->
+<!-- start section range -->
+<section class="ph-range">
+  <div class="ph-range-desc">
+    <h2 class="ph-range-desc__title">
+      The Range
+    </h2>
+    <p class="ph-range-desc__text">
+      View the styles available now from select stockists
+    </p>
+  </div>
+  
+</section>
+<!-- end section range -->
 
-    <header class="ba-header">
-        <div class="container">
-            <div class="ba-row">
 
-                <!-- добавляем ba-col- с нужным номером -->
 
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="ba-section">
-            <div class="container">
-                <div class="ba-row  ">
 
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="ba-footer">
-        <div class="container">
-            <div class="ba-row">
-                
-            </div>
-        </div>
-    </footer>
-    
+
+
+
+
+
+
+<!-- svg sprite -->
+<div class="ph-hidden">
+    <svg>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="logo"  viewBox="0 0 142 57"><g><g><image width="142" height="57" xlink:href="data:image/png;base64,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"/></g></g>
+        </symbol>
+    </svg>
+</div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

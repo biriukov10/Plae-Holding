@@ -1,3 +1,4 @@
+@import "vars.scss";
 // variables
 
 $container: 1170px; 
@@ -8,33 +9,52 @@ $colWidth: 100% / $col;
 // $primaryColor: pink; 
 
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: $primaryFontFamily;
+}
+
+h1, h2, h3 {
+  font-family: $secondaryFontFamily;
 }
 
 .container{
-    max-width: $container;
-    width: 100%;
-    padding: $gap $gap;
-    margin: 0 auto;
+  max-width: $container;
+  width: 100%;
+  padding: $gap $gap;
+  margin: 0 auto;
 }
 
-.ba-row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$gap;
-    margin-right: -$gap;
+.ph-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gap;
+  margin-right: -$gap;
 }
 
-.ba-row + .ba-row{
-    margin-top: 1rem;
+.ph-row + .ph-row{
+  margin-top: 1rem;
 }
 
-[class^="ba-col-"]{
-    padding: 0 15px;
+[class^="ph-col-"]{
+  padding: 0 15px;
 }
 
 @for $i from 1 through $col {
-    .ba-col-#{$i}{ 
-        width: $colWidth * $i; 
-    }
+  .ba-col-#{$i}{ 
+      width: $colWidth * $i; 
+  }
+}
+
+.ph-hidden {
+  position: absolute;
+  left: -9999999px;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }

@@ -13,8 +13,8 @@ $smPhoneWidth: 320px;
 // MainColor
 
 $defualt-color: #fff;
-$primary-color: #444ce0;
-$succsess-color: #26de81;
+$primary-color: #000000;
+$succsess-color: #20ab50;
 $danger-color: #fc5c65;
 $wrning-color: #fed330;
 $light-color: #999999;
@@ -30,3 +30,7 @@ $neutral-placeholder: #c0c4cc;
 $border-base: #dcdfe6;
 $border-light: #e4e7ed;
 $border-lighter: #ebeef5;
+
+// font-family
+$primaryFontFamily: 'Yantramanav', sans-serif;;
+$secondaryFontFamily: 'Nunito', sans-serif;
