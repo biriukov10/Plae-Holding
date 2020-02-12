@@ -1,7 +1,7 @@
 @import "vars.scss";
 // variables
 
-$container: 1170px; 
+$container: 972px; 
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col; 
@@ -19,6 +19,10 @@ html, body {
 
 h1, h2, h3 {
   font-family: $secondaryFontFamily;
+}
+
+a {
+  color: #000;
 }
 
 .container{
@@ -44,7 +48,7 @@ h1, h2, h3 {
 }
 
 @for $i from 1 through $col {
-  .ba-col-#{$i}{ 
+  .ph-col-#{$i}{ 
       width: $colWidth * $i; 
   }
 }
