@@ -97,7 +97,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: #dcdcdc; }
+  background-color: #dcdcdc;
+  background-attachment: fixed; }
   .ph-hero-desc {
     padding-top: 177px;
     text-align: center;
