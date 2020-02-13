@@ -10,6 +10,8 @@
 .ph-hero { 
   padding: 33px 35px;
   height: 100vh;
+  overflow-x: hidden;
+
   background: {
     image: url('../img/heroBgImage.jpg');
     size: cover;
@@ -19,12 +21,12 @@
     // attachment: fixed; 
   };
 
-  &-logo {
-    &__item {
-      width: 142px;
-      height: 57px;
-    }
-  }
+  // &-logo {
+  //   &__item {
+  //     width: 142px;
+  //     height: 57px;
+  //   }
+  // }
 
   &-desc {
     padding-top: 177px;
@@ -49,8 +51,12 @@
     display: flex;
     justify-content: center;
     &__input {
-      padding: 19px 112px 17px 4px;
+      padding: 7px 81px 0px 31px;
       border-radius: 20px 0px 0px 20px;
+
+      &--contact {
+        padding: 7px 69px 0 61px;
+      }
 
       &:focus, &:active {
         box-shadow: 0 0 5px #51cbee
@@ -159,6 +165,7 @@
 
 .ph-about {
   display: flex;
+  overflow-x: hidden;
 
   &-desc {
     width: 50%;
@@ -260,6 +267,8 @@
       font-size: 1.875rem;
       font-weight: 500;
       margin-bottom: 115px;
+      text-indent: 17px;
+      letter-spacing: 0.4px;
     }
 
     &__quote {
@@ -269,22 +278,10 @@
       line-height: 30px;
       font-weight: 300;
       letter-spacing: 1px;
+      text-indent: 14px;
 
-      &::before {
-        content: url('../img/leftQuotes.png');
-        position: absolute;
-        left: -8px;
-        top: -48px;
-      }
-
-      &::after {
-        content: url('../img/rightQuotes.png');
-        position: absolute;
-        right: -23px;
-        bottom: -17px;
-      } 
-      
       &--quotes {
+        text-indent: 0;
 
         &::before {
           left: -28px;
@@ -296,6 +293,23 @@
           bottom: -21px;
         }
       }
+
+      &::before {
+        content: url('../img/leftQuotes.png');
+        position: absolute;
+        left: -20px;
+        top: -48px;
+        text-indent: 16px;
+      }
+
+      &::after {
+        content: url('../img/rightQuotes.png');
+        position: absolute;
+        right: -23px;
+        bottom: -17px;
+      } 
+      
+      
     }
 
     &__author {
@@ -313,6 +327,7 @@
 
     &--padding {
       padding-top: 313px;
+
     
       @media screen and(min-width: 1500px) {
         padding-top: 500px;
@@ -346,6 +361,8 @@
   position: relative;
   padding: 79px 0;
   text-align: center;
+  overflow-x: hidden;
+  max-height: 798px;
 
   &-left-btn {
     position: absolute;
@@ -381,12 +398,38 @@
       font-size: 1.875rem;
       font-weight: 400;
       line-height: 46px;
+
+      &--find {
+        text-indent: -47px;
+        margin-bottom: 4px;
+      }
+
+      &--stroke {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-indent: -20px;
+      }
+
+      &--contact {
+        letter-spacing: 1px;
+      }
     }
 
     &__text {
       font-size: 0.855rem;
       font-weight: 300;
       line-height: 36px;
+
+      &--find {
+        font-size: 1rem;
+        text-indent: -39px
+      }
+
+      &--contact {
+        font-size: 1rem;
+        font-weight: 400;
+        text-indent: -38px;
+      }
     }
 
     &--product{
@@ -394,11 +437,15 @@
     }
 
     &--find {
-      margin-bottom: 65px;
+      margin-bottom: 61px;
     }
 
     &--stoke {
-      margin-bottom: 47px;
+      margin-bottom: 32px;
+    }
+
+    &--contact {
+      margin-bottom: 36px;
     }
   }
 
@@ -445,7 +492,8 @@
 // start section product
 
 .ph-product {
-  padding: 67px 60px 70px;
+  padding: 75px 60px 57px;
+  overflow-x: hidden;
   background: {
     image: url('../img/image.png');
     repeat: no-repeat;
@@ -496,13 +544,17 @@
 
 // start section find
 
-.ph-find {
-  padding: 90px 0 72px;
+.ph-find {  
+  padding: 0 0 72px;
   overflow-x: hidden;
 
   &-forward {
     display: flex;
     margin-bottom: 50px;
+
+    &--marginb {
+      margin-bottom: 76px;
+    }
 
     &-menu {
       margin-right: 80px;
@@ -522,10 +574,6 @@
           color: $succsess-color;
         }
       }
-    }
-
-    &--marginb {
-      margin-bottom: 85px;
     }
 
     @media screen and(max-width: 1050px) {
@@ -550,8 +598,12 @@
     letter-spacing: 0.18px;
 
     &__mail {
-      margin-right: 110px;
+      margin-right: 76px;
       color: $succsess-color;
+    }
+
+    &__phone {
+      font-weight: 300;
     }
   }
 }
@@ -559,19 +611,20 @@
 // start section contact 
 
 .ph-contact {
-  padding: 125px 0 115px;
+  padding: 113px 0 110px;
   background-color: #f3f3f3;
-
+  overflow-x: hidden;
 }
 
 // start footer
 
 .ph-footer {
-  padding: 14px 0 12px;
-  background-color: #dcdcdc;
+  padding: 2px 37px 11px;
+  background-color: #dcdcdc99;
+  overflow-x: hidden;
 
   &__text {
-    font-size: .875rem;
+    font-size: .7rem;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: .35px;

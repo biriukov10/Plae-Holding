@@ -259,14 +259,12 @@ html {
 .ph-hero {
   padding: 33px 35px;
   height: 100vh;
+  overflow-x: hidden;
   background-image: url("../img/heroBgImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #dcdcdc; }
-  .ph-hero-logo__item {
-    width: 142px;
-    height: 57px; }
   .ph-hero-desc {
     padding-top: 177px;
     text-align: center;
@@ -285,8 +283,10 @@ html {
     display: flex;
     justify-content: center; }
     .ph-hero-form__input {
-      padding: 19px 112px 17px 4px;
+      padding: 7px 81px 0px 31px;
       border-radius: 20px 0px 0px 20px; }
+      .ph-hero-form__input--contact {
+        padding: 7px 69px 0 61px; }
       .ph-hero-form__input:focus, .ph-hero-form__input:active {
         box-shadow: 0 0 5px #51cbee; }
       .ph-hero-form__input::placeholder {
@@ -353,7 +353,8 @@ html {
       padding-bottom: 100px; } }
 
 .ph-about {
-  display: flex; }
+  display: flex;
+  overflow-x: hidden; }
   .ph-about-desc {
     width: 50%;
     padding: 111px 125px 110px 114px; }
@@ -420,30 +421,36 @@ html {
     .ph-customers-desc__title {
       font-size: 1.875rem;
       font-weight: 500;
-      margin-bottom: 115px; }
+      margin-bottom: 115px;
+      text-indent: 17px;
+      letter-spacing: 0.4px; }
     .ph-customers-desc__quote {
       display: inline-block;
       position: relative;
       font-size: 1.25rem;
       line-height: 30px;
       font-weight: 300;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      text-indent: 14px; }
+      .ph-customers-desc__quote--quotes {
+        text-indent: 0; }
+        .ph-customers-desc__quote--quotes::before {
+          left: -28px;
+          bottom: -44px; }
+        .ph-customers-desc__quote--quotes::after {
+          right: -32px;
+          bottom: -21px; }
       .ph-customers-desc__quote::before {
         content: url("../img/leftQuotes.png");
         position: absolute;
-        left: -8px;
-        top: -48px; }
+        left: -20px;
+        top: -48px;
+        text-indent: 16px; }
       .ph-customers-desc__quote::after {
         content: url("../img/rightQuotes.png");
         position: absolute;
         right: -23px;
         bottom: -17px; }
-      .ph-customers-desc__quote--quotes::before {
-        left: -28px;
-        bottom: -44px; }
-      .ph-customers-desc__quote--quotes::after {
-        right: -32px;
-        bottom: -21px; }
     .ph-customers-desc__author {
       display: block;
       font-size: 1.125rem;
@@ -474,7 +481,9 @@ html {
 .ph-range {
   position: relative;
   padding: 79px 0;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden;
+  max-height: 798px; }
   .ph-range-left-btn {
     position: absolute;
     left: 25%;
@@ -501,16 +510,34 @@ html {
       font-size: 1.875rem;
       font-weight: 400;
       line-height: 46px; }
+      .ph-range-desc__title--find {
+        text-indent: -47px;
+        margin-bottom: 4px; }
+      .ph-range-desc__title--stroke {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-indent: -20px; }
+      .ph-range-desc__title--contact {
+        letter-spacing: 1px; }
     .ph-range-desc__text {
       font-size: 0.855rem;
       font-weight: 300;
       line-height: 36px; }
+      .ph-range-desc__text--find {
+        font-size: 1rem;
+        text-indent: -39px; }
+      .ph-range-desc__text--contact {
+        font-size: 1rem;
+        font-weight: 400;
+        text-indent: -38px; }
     .ph-range-desc--product {
       margin-bottom: 20px; }
     .ph-range-desc--find {
-      margin-bottom: 65px; }
+      margin-bottom: 61px; }
     .ph-range-desc--stoke {
-      margin-bottom: 47px; }
+      margin-bottom: 32px; }
+    .ph-range-desc--contact {
+      margin-bottom: 36px; }
   .ph-range-slider {
     display: flex;
     justify-content: center;
@@ -539,7 +566,8 @@ html {
         letter-spacing: 0.9px; }
 
 .ph-product {
-  padding: 67px 60px 70px;
+  padding: 75px 60px 57px;
+  overflow-x: hidden;
   background-image: url("../img/image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -571,11 +599,13 @@ html {
         align-items: center; } }
 
 .ph-find {
-  padding: 90px 0 72px;
+  padding: 0 0 72px;
   overflow-x: hidden; }
   .ph-find-forward {
     display: flex;
     margin-bottom: 50px; }
+    .ph-find-forward--marginb {
+      margin-bottom: 76px; }
     .ph-find-forward-menu {
       margin-right: 80px; }
       .ph-find-forward-menu__link {
@@ -588,8 +618,6 @@ html {
           font-weight: 400; }
         .ph-find-forward-menu__link--color {
           color: #20ab50; }
-    .ph-find-forward--marginb {
-      margin-bottom: 85px; }
     @media screen and (max-width: 1050px) {
       .ph-find-forward {
         flex-wrap: wrap;
@@ -606,18 +634,22 @@ html {
     font-weight: 400;
     letter-spacing: 0.18px; }
     .ph-find-contact__mail {
-      margin-right: 110px;
+      margin-right: 76px;
       color: #20ab50; }
+    .ph-find-contact__phone {
+      font-weight: 300; }
 
 .ph-contact {
-  padding: 125px 0 115px;
-  background-color: #f3f3f3; }
+  padding: 113px 0 110px;
+  background-color: #f3f3f3;
+  overflow-x: hidden; }
 
 .ph-footer {
-  padding: 14px 0 12px;
-  background-color: #dcdcdc; }
+  padding: 2px 37px 11px;
+  background-color: #dcdcdc99;
+  overflow-x: hidden; }
   .ph-footer__text {
-    font-size: .875rem;
+    font-size: .7rem;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: .35px;
