@@ -265,6 +265,16 @@ html {
       font-weight: 300;
       letter-spacing: 1px;
       text-indent: 14px; }
+      .ph-customers-desc__quote::before {
+        content: url("../img/leftQuotes.png");
+        position: absolute;
+        left: -20px;
+        top: -48px; }
+      .ph-customers-desc__quote::after {
+        content: url("../img/rightQuotes.png");
+        position: absolute;
+        right: -23px;
+        bottom: -17px; }
       .ph-customers-desc__quote--quotes {
         text-indent: 5px; }
         .ph-customers-desc__quote--quotes::before {
@@ -277,16 +287,6 @@ html {
           position: absolute;
           right: -32px;
           bottom: -23px; }
-      .ph-customers-desc__quote::before {
-        content: url("../img/leftQuotes.png");
-        position: absolute;
-        left: -20px;
-        top: -48px; }
-      .ph-customers-desc__quote::after {
-        content: url("../img/rightQuotes.png");
-        position: absolute;
-        right: -23px;
-        bottom: -17px; }
     .ph-customers-desc__author {
       display: block;
       font-size: 1.125rem;
@@ -318,8 +318,7 @@ html {
   position: relative;
   padding: 79px 0;
   text-align: center;
-  overflow-x: hidden;
-  max-height: 798px; }
+  overflow-x: hidden; }
   .ph-range-left-btn {
     position: absolute;
     left: 25%;
@@ -354,7 +353,9 @@ html {
         letter-spacing: 0;
         text-indent: -32px; }
       .ph-range-desc__title--contact {
-        letter-spacing: 1px; }
+        font-size: 1.75rem;
+        letter-spacing: 1px;
+        text-indent: -26px; }
     .ph-range-desc__text {
       font-size: 0.855rem;
       font-weight: 300;
@@ -749,7 +750,7 @@ html {
   overflow-x: hidden; }
 
 .ph-footer {
-  padding: 2px 37px 11px;
+  padding: 9px 37px 8px;
   background-color: #dcdcdc99;
   overflow-x: hidden; }
   .ph-footer__text {

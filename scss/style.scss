@@ -280,6 +280,20 @@
       letter-spacing: 1px;
       text-indent: 14px;
 
+      &::before {
+        content: url('../img/leftQuotes.png');
+        position: absolute;
+        left: -20px;
+        top: -48px;
+      }
+
+      &::after {
+        content: url('../img/rightQuotes.png');
+        position: absolute;
+        right: -23px;
+        bottom: -17px;
+      } 
+      
       &--quotes {
         text-indent: 5px;
 
@@ -297,21 +311,6 @@
           bottom: -23px;
         }
       }
-
-      &::before {
-        content: url('../img/leftQuotes.png');
-        position: absolute;
-        left: -20px;
-        top: -48px;
-      }
-
-      &::after {
-        content: url('../img/rightQuotes.png');
-        position: absolute;
-        right: -23px;
-        bottom: -17px;
-      } 
-      
       
     }
 
@@ -365,7 +364,7 @@
   padding: 79px 0;
   text-align: center;
   overflow-x: hidden;
-  max-height: 798px;
+  // max-height: 798px;
 
   &-left-btn {
     position: absolute;
@@ -414,7 +413,9 @@
       }
 
       &--contact {
+        font-size: 1.75rem;
         letter-spacing: 1px;
+        text-indent: -26px;
       }
     }
 
@@ -976,7 +977,7 @@
 // start footer
 
 .ph-footer {
-  padding: 2px 37px 11px;
+  padding: 9px 37px 8px;
   background-color: #dcdcdc99;
   overflow-x: hidden;
 
