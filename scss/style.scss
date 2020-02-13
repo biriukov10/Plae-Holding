@@ -281,16 +281,20 @@
       text-indent: 14px;
 
       &--quotes {
-        text-indent: 0;
+        text-indent: 5px;
 
         &::before {
-          left: -28px;
+          content: url('../img/leftQuotes.png');
+          position: absolute;
+          left: -34px;
           bottom: -44px;
         }
 
         &::after {
+          content: url('../img/rightQuotes.png');
+          position: absolute;
           right: -32px;
-          bottom: -21px;
+          bottom: -23px;
         }
       }
 
@@ -299,7 +303,6 @@
         position: absolute;
         left: -20px;
         top: -48px;
-        text-indent: 16px;
       }
 
       &::after {
@@ -362,7 +365,7 @@
   padding: 79px 0;
   text-align: center;
   overflow-x: hidden;
-  max-height: 798px;
+  // max-height: 798px;
 
   &-left-btn {
     position: absolute;
@@ -404,10 +407,10 @@
         margin-bottom: 4px;
       }
 
-      &--stroke {
-        font-size: 1rem;
-        letter-spacing: 1px;
-        text-indent: -20px;
+      &--stoke {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        text-indent: -32px;
       }
 
       &--contact {
@@ -418,7 +421,7 @@
     &__text {
       font-size: 0.855rem;
       font-weight: 300;
-      line-height: 36px;
+      line-height: 35px;
 
       &--find {
         font-size: 1rem;
@@ -429,6 +432,12 @@
         font-size: 1rem;
         font-weight: 400;
         text-indent: -38px;
+      }
+
+      &--stoke {
+        font-size: 1rem;
+        text-indent: -28px;
+        letter-spacing: .7px; 
       }
     }
 
@@ -516,6 +525,18 @@
         border-radius: 10px;
         margin-bottom: 10px;
 
+        &--right {
+          padding-top: 10px;
+        }
+
+        &--paddingt {
+          padding-top: 0;
+        }
+
+        &--paddingtop {
+          padding-top: 9px;
+        }
+
         &__title {
           font-size: 1rem;
           font-weight: 400;
@@ -545,7 +566,7 @@
 // start section find
 
 .ph-find {  
-  padding: 0 0 72px;
+  padding: 40px 0 72px;
   overflow-x: hidden;
 
   &-forward {
@@ -557,7 +578,11 @@
     }
 
     &-menu {
-      margin-right: 80px;
+      margin-right: 73px;
+
+      &--marginr {
+        margin-right: 66px;
+      }
 
       &__link {
         font-size: .9375rem;
@@ -598,8 +623,11 @@
     letter-spacing: 0.18px;
 
     &__mail {
-      margin-right: 76px;
+      display: inline-block;
+      margin-right: 98px;
       color: $succsess-color;
+      font-weight: 300;
+      text-indent: -17px;
     }
 
     &__phone {

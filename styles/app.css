@@ -179,7 +179,7 @@ a {
   color: #000; }
 
 .container {
-  max-width: 972px;
+  max-width: 1084px;
   width: 100%;
   padding: 15px 15px;
   margin: 0 auto; }
@@ -433,19 +433,22 @@ html {
       letter-spacing: 1px;
       text-indent: 14px; }
       .ph-customers-desc__quote--quotes {
-        text-indent: 0; }
+        text-indent: 5px; }
         .ph-customers-desc__quote--quotes::before {
-          left: -28px;
+          content: url("../img/leftQuotes.png");
+          position: absolute;
+          left: -34px;
           bottom: -44px; }
         .ph-customers-desc__quote--quotes::after {
+          content: url("../img/rightQuotes.png");
+          position: absolute;
           right: -32px;
-          bottom: -21px; }
+          bottom: -23px; }
       .ph-customers-desc__quote::before {
         content: url("../img/leftQuotes.png");
         position: absolute;
         left: -20px;
-        top: -48px;
-        text-indent: 16px; }
+        top: -48px; }
       .ph-customers-desc__quote::after {
         content: url("../img/rightQuotes.png");
         position: absolute;
@@ -482,8 +485,7 @@ html {
   position: relative;
   padding: 79px 0;
   text-align: center;
-  overflow-x: hidden;
-  max-height: 798px; }
+  overflow-x: hidden; }
   .ph-range-left-btn {
     position: absolute;
     left: 25%;
@@ -513,16 +515,16 @@ html {
       .ph-range-desc__title--find {
         text-indent: -47px;
         margin-bottom: 4px; }
-      .ph-range-desc__title--stroke {
-        font-size: 1rem;
-        letter-spacing: 1px;
-        text-indent: -20px; }
+      .ph-range-desc__title--stoke {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        text-indent: -32px; }
       .ph-range-desc__title--contact {
         letter-spacing: 1px; }
     .ph-range-desc__text {
       font-size: 0.855rem;
       font-weight: 300;
-      line-height: 36px; }
+      line-height: 35px; }
       .ph-range-desc__text--find {
         font-size: 1rem;
         text-indent: -39px; }
@@ -530,6 +532,10 @@ html {
         font-size: 1rem;
         font-weight: 400;
         text-indent: -38px; }
+      .ph-range-desc__text--stoke {
+        font-size: 1rem;
+        text-indent: -28px;
+        letter-spacing: .7px; }
     .ph-range-desc--product {
       margin-bottom: 20px; }
     .ph-range-desc--find {
@@ -582,6 +588,12 @@ html {
       background-color: #fff;
       border-radius: 10px;
       margin-bottom: 10px; }
+      .ph-product-desc-comment-item--right {
+        padding-top: 10px; }
+      .ph-product-desc-comment-item--paddingt {
+        padding-top: 0; }
+      .ph-product-desc-comment-item--paddingtop {
+        padding-top: 9px; }
       .ph-product-desc-comment-item__title {
         font-size: 1rem;
         font-weight: 400;
@@ -599,7 +611,7 @@ html {
         align-items: center; } }
 
 .ph-find {
-  padding: 0 0 72px;
+  padding: 40px 0 72px;
   overflow-x: hidden; }
   .ph-find-forward {
     display: flex;
@@ -607,7 +619,9 @@ html {
     .ph-find-forward--marginb {
       margin-bottom: 76px; }
     .ph-find-forward-menu {
-      margin-right: 80px; }
+      margin-right: 73px; }
+      .ph-find-forward-menu--marginr {
+        margin-right: 66px; }
       .ph-find-forward-menu__link {
         font-size: .9375rem;
         line-height: 24px;
@@ -634,8 +648,11 @@ html {
     font-weight: 400;
     letter-spacing: 0.18px; }
     .ph-find-contact__mail {
-      margin-right: 76px;
-      color: #20ab50; }
+      display: inline-block;
+      margin-right: 98px;
+      color: #20ab50;
+      font-weight: 300;
+      text-indent: -17px; }
     .ph-find-contact__phone {
       font-weight: 300; }
 
