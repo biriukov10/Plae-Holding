@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  // добавление класса active при прокрутке
+  // add class active for scrolling
 	$(window).scroll(function(){
 		let $sections = $('section');
    		$sections.each(function(i,el){
@@ -14,7 +14,7 @@ $(document).ready(function(){
     })
   });
 
-  // плавный скролл
+  // easy scroll
   $(".ph-hero-dots__circle").click(function () {
 		let elementClick = $(this).attr("href");
 		let destination = $(elementClick).offset().top;

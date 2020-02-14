@@ -99,6 +99,10 @@ html {
   background-position: top center;
   background-color: #dcdcdc;
   background-attachment: fixed; }
+  @media screen and (max-width: 566px) {
+    .ph-hero-logo {
+      display: flex;
+      justify-content: center; } }
   .ph-hero-desc {
     padding-top: 177px;
     text-align: center;
@@ -115,6 +119,9 @@ html {
       letter-spacing: -1.5px;
       margin-bottom: 53px;
       text-indent: -12px; }
+    @media screen and (max-width: 566px) {
+      .ph-hero-desc {
+        padding-top: 60px; } }
   .ph-hero-form {
     display: flex;
     justify-content: center; }
@@ -1235,6 +1242,9 @@ html {
               height: 23px;
               left: -585px;
               top: 41px; } }
+      @media screen and (max-width: 566px) {
+        .ph-product-desc-comment-item {
+          max-width: 467px; } }
     @media screen and (max-width: 585px) {
       .ph-product-desc-comment {
         margin-bottom: 50px; } }
@@ -1299,6 +1309,9 @@ html {
   padding: 116px 0 110px;
   background-color: #f3f3f3;
   overflow-x: hidden; }
+  @media screen and (max-width: 566px) {
+    .ph-contact {
+      padding: 50px 0; } }
 
 .ph-footer {
   padding: 2px 37px 11px;
