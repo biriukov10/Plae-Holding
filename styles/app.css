@@ -296,13 +296,13 @@ html {
       padding: 7px 73px 0px 37px;
       border-radius: 30px 0px 0px 30px; }
       .ph-hero-form__input--contact {
-        padding: 7px 69px 0 61px; }
+        padding: 7px 69px 5px 61px; }
       .ph-hero-form__input:focus, .ph-hero-form__input:active {
         box-shadow: 0 0 5px #51cbee; }
       .ph-hero-form__input::placeholder {
         font-size: 18px;
         font-weight: 300;
-        letter-spacing: .5px;
+        letter-spacing: -.4px;
         color: #8c8c8c; }
     .ph-hero-form__btn {
       font-family: "Nunito", sans-serif;
@@ -315,8 +315,11 @@ html {
       border: 1px solid transparent;
       cursor: pointer;
       transition: .3s; }
-      .ph-hero-form__btn--color:hover {
-        color: #20ab50; }
+      .ph-hero-form__btn--color {
+        padding: 9px 50px 11px 41px;
+        letter-spacing: .8px; }
+        .ph-hero-form__btn--color:hover {
+          color: #20ab50; }
       .ph-hero-form__btn:focus, .ph-hero-form__btn:active {
         box-shadow: 0 0 5px #51cbee; }
       .ph-hero-form__btn:hover {
@@ -604,6 +607,8 @@ html {
   background-position-y: -9px;
   background-color: #e1e0e1; }
   .ph-product-desc {
+    width: 100%;
+    max-width: 1280px;
     display: flex;
     justify-content: space-between; }
     .ph-product-desc-comment--left {
@@ -1481,12 +1486,12 @@ html {
       padding: 50px 0; } }
 
 .ph-footer {
-  padding: 2px 37px 11px;
+  padding: 4px 37px 7px;
   background-color: #dcdcdc99;
   overflow-x: hidden; }
   .ph-footer__text {
     font-size: .7rem;
     line-height: 20px;
     font-weight: 400;
-    letter-spacing: .35px;
+    letter-spacing: .1px;
     color: #fff; }
