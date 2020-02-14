@@ -456,7 +456,7 @@
     }
 
     &--find {
-      margin-bottom: 61px;
+      margin-bottom: 57px;
     }
 
     &--stoke {
@@ -814,7 +814,7 @@
           }
         }
 
-        &--sixth {
+        &--sixthLine {
           &::after {
             content: '';
             position: absolute;
@@ -876,7 +876,7 @@
           }
         }
 
-        &--seventh {
+        &--seventhLine {
           &::after {
             content: '';
             position: absolute;
@@ -908,7 +908,7 @@
           }
         }
 
-        &--eighth {
+        &--eighthLine {
           &::after {
             content: '';
             position: absolute;
@@ -963,14 +963,14 @@
             @media screen and(min-width: 1920px) {
               content: '';
               width: 1px;
-              height: 61px;
+              height: 82px;
               left: -338px;
-              top: 61px;
+              top: 40px;
             }
           }
         }
 
-        &--ninth {
+        &--ninthLine {
           &::after {
             content: '';
             position: absolute;
@@ -978,7 +978,7 @@
             height: 1px;
             background-color: #ffffff;
             left: -343px;
-            top: 30px;
+            top: 24px;
 
             @media screen and(max-width: 1279px) {
               content: '';
@@ -1206,7 +1206,7 @@
               border-radius: 50%;
               background-color: #fff;
               right: -253px;
-              top: -25px;
+              top: -37px;
 
               @media screen and(max-width: 1279px) {
                 width: 0;
@@ -1235,7 +1235,7 @@
               border-radius: 50%;
               background-color: #fff;
               right: -257px;
-              top: -29px;
+              top: -40px;
 
               @media screen and(max-width: 1279px) {
                 width: 0;
@@ -1446,7 +1446,7 @@
               border-radius: 50%;
               background-color: #fff;
               left: -202px;
-              top: -42px;
+              top: -37px;
 
               @media screen and(max-width: 1279px) {
                 width: 0;
@@ -1462,7 +1462,7 @@
                 width: 15px;
                 height: 15px;
                 left: -360px;
-                top: 11px;
+                top: -16px;
               }
             }
 
@@ -1475,7 +1475,7 @@
               border-radius: 50%;
               background-color: #fff;
               left: -206px;
-              top: -46px;
+              top: -41px;
 
               @media screen and(max-width: 1279px) {
                 width: 0;
@@ -1491,7 +1491,7 @@
                 width: 23px;
                 height: 23px;
                 left: -364px;
-                top: 7px;
+                top: -20px;
               }
 
             } 
@@ -1505,8 +1505,8 @@
               height: 15px;
               border-radius: 50%;
               background-color: #fff;
-              left: -367px;
-              top: -12px;
+              left: -376px;
+              top: -18px;
 
               @media screen and(max-width: 1279px) {
                 width: 0;
@@ -1534,8 +1534,8 @@
               opacity: .5;
               border-radius: 50%;
               background-color: #fff;
-              left: -371px;
-              top: -16px;
+              left: -380px;
+              top: -22px;
 
               @media screen and(max-width: 1279px) {
                 width: 0;
@@ -1590,10 +1590,14 @@
 
   &-forward {
     display: flex;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
 
     &--marginb {
-      margin-bottom: 86px;
+      margin-bottom: 81px;
+    }
+
+    &--secondLine {
+      margin-bottom: 58px;
     }
 
     &-menu {
@@ -1605,7 +1609,7 @@
 
       &__link {
         font-size: .9375rem;
-        line-height: 24px;
+        line-height: 1.5;
         font-weight: 300;
         letter-spacing: 0.08px;
         color: #000;
